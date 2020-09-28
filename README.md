@@ -5,7 +5,7 @@ GitHub issue: https://github.com/quarkusio/quarkus/issues/12345
 Steps to reproduce
 1. Create a postgres DB: `create user quarkus_test with password 'quarkus_test'; create database quarkus_test with owner quarkus_test encoding 'UTF8';` 
 2. Create the DB schema `psql -d quarkus_test -f schema.sql`
-3. Run the data.sql file `psql -d quarkus_test -f import.sql`
+3. Run the import.sql file `psql -d quarkus_test -f import.sql`
 4. Compile native-image and execute process
 5. run following on a terminal to execute requests and it will throw the error described in issue: `curl -i -X GET http://localhost:8080/api/books`.
 
